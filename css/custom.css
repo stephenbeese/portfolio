@@ -1,0 +1,30 @@
+/* .hidden-content {
+    display: none;
+}
+
+.visible {
+    display: block !important;
+} */
+
+.caption-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+.snooker-club:hover .caption {
+    background-color: rgba(80, 185, 249, 0.63);
+}
+
+.fizzybeese:hover .caption {
+    background-color:rgba(244, 162, 205, 0.86);
+}
+
+.memory-game:hover .caption {
+    background-color: rgba(178, 189, 78, 0.63);
+}
+
+.tetris:hover .caption {
+    background-color: rgba(75, 75, 75, 0.63);
+}
