@@ -1,11 +1,3 @@
-/* .hidden-content {
-    display: none;
-}
-
-.visible {
-    display: block !important;
-} */
-
 .caption-content {
     display: none;
     opacity: 0;
@@ -48,6 +40,50 @@
     text-decoration: underline;
 }
 
-/* .heading-container {
-background-color: rgba(75, 75, 75, 0.63);
-} */
+
+
+/* Fizzybeese */
+
+.masthead-fizzy {
+    min-height: 30rem;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 80vh;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/responsive.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Contact Form Page */
+
+.contact-container {
+    width: 25vw;
+}
+
+@media screen and (max-width: 1600px) {
+    .contact-container {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contact-container {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contact-container {
+        width: 90vw;
+    }
+}
+
+#contact-form {
+    margin: 0 auto;
+    width: 90%;
+}
