@@ -107,3 +107,23 @@
 .home-button:hover {
   background: #343a40;
 }
+
+
+
+/* FizzyBeese Page */
+
+.features-list li {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+
+.logo-image {
+    width: 70px;
+    position: relative;
+    top: -8px;
+}
+
+.shadow-hover:hover {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,1);
+}

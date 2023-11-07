@@ -38,16 +38,16 @@
     </header>
     <!-- About-->
     <section class="content-section bg-light" id="about">
-        <div class="container px-4 px-lg-5 text-center">
+        <div class="container-fluid">
             <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-10">
-                    <h2 class="mb-4">About this project</h2>
+                <div class="col-lg-11">
+                    <h2 class="mb-4 text-center">About this project</h2>
                     <hr class="w-50 mx-auto">
                     <div class="row justify-content-center">
                         <!-- <div class="col-4"> -->
                         <!-- Image Placeholder -->
                         <!-- </div> -->
-                        <div class="col-11">
+                        <div class="col-9">
                             <p class="lead mb-5">
                                 FizzyBeese is a small independently run business that sells bath bombs, wax melts, and
                                 other various accessories directly to their customers. Users can browse products by
@@ -57,7 +57,10 @@
                                 delivery information ready for their next order. In terms of admin capabilities, the
                                 admin can create, update, and delete products as well as hide them from the user and
                                 update sale or clearance prices. The site also features a stock control system that is
-                                easily updated by the admin.</p>
+                                easily updated by the admin.
+                            </p>
+                            <p class="lead mb-2 fw-bold">I plan on releasing this website to be used in production at
+                                the start of 2024.</p>
                             <!-- <a class="btn btn-dark btn-xl" href="#services">What We Offer</a> -->
                         </div>
                     </div>
@@ -67,13 +70,89 @@
     </section>
     <!-- Services-->
     <section class="content-section bg-primary text-white text-center" id="services">
-        <div class="container px-4 px-lg-5">
+        <div class="container-fluid">
             <div class="content-section-heading">
                 <h3 class="text-secondary mb-0">Skills</h3>
-                <h2 class="mb-5">What I Can Offer</h2>
+                <h2 class="mb-5">Technologies Used</h2>
             </div>
             <div class="row gx-4 gx-lg-5">
-                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                <div class="col-12">
+                    <!-- <ul class="list-inline">
+                        <li class="list-inline-item">
+                                <img class="logo-image" src="assets/img/logo/html-logo.png" alt="HTML5">
+                        </li>
+                        <li class="list-inline-item">
+                            <img class="logo-image" src="assets/img/logo/css-logo.png" alt="CSS3">
+                        </li>
+                        <li class="list-inline-item">
+                            <img class="logo-image" src="assets/img/logo/javascript-logo.webp" alt="JavaScript">
+                        </li>
+                        <li class="list-inline-item">
+                            <img class="logo-image" src="assets/img/logo/python-logo.png" alt="Python3">
+                        </li>
+                        <li class="list-inline-item">
+                            <img class="logo-image" src="assets/img/logo/django-logo.webp" alt="Django Framework">
+                        </li>
+                        <li class="list-inline-item">
+                            <img class="logo-image" src="assets/img/logo/heroku-logo.png" alt="Heroku">
+                        </li>
+                        <li class="list-inline-item">
+                            <img class="logo-image" src="assets/img/logo/stripe-logo.webp" alt="Stripe">
+                        </li>
+                        <li class="list-inline-item">
+                            <img class="logo-image" src="assets/img/logo/aws-logo.webp" alt="Amazon Web Services">
+                        </li>
+                    </ul> -->
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <span class="service-icon rounded-circle mx-auto mb-3 shadow-hover">
+                                <img class="logo-image" src="assets/img/logo/html-logo.png" alt="HTML5" title="HTML5">
+                            </span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="service-icon rounded-circle mx-auto mb-3 shadow-hover">
+                                <img class="logo-image" src="assets/img/logo/css-logo.png" alt="CSS3" title="CSS3">
+                            </span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="service-icon rounded-circle mx-auto mb-3 shadow-hover">
+                                <img class="logo-image" src="assets/img/logo/javascript-logo.webp" alt="JavaScript"
+                                    title="JavaScript">
+                            </span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="service-icon rounded-circle mx-auto mb-3 shadow-hover">
+                                <img class="logo-image" src="assets/img/logo/python-logo.png" alt="Python3"
+                                    title="Python3">
+                            </span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="service-icon rounded-circle mx-auto mb-3 shadow-hover">
+                                <img class="logo-image" src="assets/img/logo/django-logo.webp" alt="Django Framework"
+                                    title="Django">
+                            </span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="service-icon rounded-circle mx-auto mb-3 shadow-hover">
+                                <img class="logo-image" src="assets/img/logo/heroku-logo.png" alt="Heroku"
+                                    title="Heroku">
+                            </span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="service-icon rounded-circle mx-auto mb-3 shadow-hover">
+                                <img class="logo-image" src="assets/img/logo/stripe-logo.webp" alt="Stripe"
+                                    title="Stripe">
+                            </span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="service-icon rounded-circle mx-auto mb-3 shadow-hover">
+                                <img class="logo-image" src="assets/img/logo/aws-logo.webp" alt="Amazon Web Services"
+                                    title="Amazon Web Services">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                     <span class="service-icon rounded-circle mx-auto mb-3">
                         <i class="fa-solid fa-code"></i>
                     </span>
@@ -115,10 +194,11 @@
                     <p class="text-faded mb-0">Well-versed in Agile methodologies, object-oriented programming, and
                         software security. Possesses strong soft skills in project management, UX design, software
                         testing, and accessibility considerations.</p>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
+
     <!-- Callout-->
     <!-- <section class="callout">
         <div class="container px-4 px-lg-5 text-center">
@@ -133,31 +213,58 @@
     </section> -->
     <!-- Portfolio-->
     <section class="content-section" id="portfolio">
-        <div class="container px-4 px-lg-5">
+        <div class="container-fluid">
             <div class="content-section-heading text-center">
                 <h3 class="text-secondary mb-0">FizzyBeese</h3>
-                <h2 class="mb-5">Features</h2>
+                <h2 class="mb-5 text-primary">Features</h2>
             </div>
-            <div class="row gx-0">
-                <div class="col-lg-6">
-                    <ul>
-                        <li><strong>User Friendly Shopping: </strong>Users can effortlessly browse, search, sort and
+            <div class="row gx-0 justify-content-center">
+                <div class="col-10 col-lg-8">
+                    <!-- <ul class="text-body features-list">
+                        <li><strong class="fs-3 d-block text-primary">User Friendly Shopping: </strong>Users can effortlessly browse, search, sort and
                             purchase products in a visually appealing and intuative design</li>
-                        <li><strong>Responsive Design: </strong>The website is fully responsive, ensuring an optimal
+                        <li><strong class="fs-3 d-block text-primary">Responsive Design: </strong>The website is fully responsive, ensuring an optimal
                             experience across desktop, tablet and mobile devices.</li>
-                        <li><strong>User Authentication: </strong>Secure user authentication using Django AllAuth allows
+                        <li><strong class="fs-3 d-block text-primary">User Authentication: </strong>Secure user authentication using Django AllAuth allows
                             customers to create accounts, log in, and access personalised features. Such as, viewing
                             past orders, saving profile information and submitting testimonials.</li>
-                        <li><strong>E-Commerce Essentials: </strong>The project includes a shopping bag, product
+                        <li><strong class="fs-3 d-block text-primary">E-Commerce Essentials: </strong>The project includes a shopping bag, product
                             categories, sorting options, and user-friendly product pages. Along with email confirmation
                             and toasts to display changes made by the user.</li>
-                        <li><strong>Payment: </strong> Integration with the Stripe payment system ensures secure and
+                        <li><strong class="fs-3 d-block text-primary">Payment: </strong> Integration with the Stripe payment system ensures secure and
                             convenient online transactions.</li>
-                        <li><strong>Comprehensive Admin Pannel: </strong> An efficient admin panel allows the site admin
+                        <li><strong class="fs-3 d-block text-primary">Comprehensive Admin Panel: </strong> An efficient admin panel allows the site admin
                             to manage products, orders and testimonials with ease. Using both the built in Django admin
                             panel and custom admin accessible via the websites frontend. Such as, adding and editing
                             products, adding events and viewing hidden products.</li>
-                        <li><strong>Thorough Testing: </strong>Rigorous testing and debugging ensures a smooth user
+                        <li><strong class="fs-3 d-block text-primary">Thorough Testing: </strong>Rigorous testing and debugging ensures a smooth user
+                            experience with user updates if an error should occur.</li>
+                    </ul> -->
+                    <ul class="text-muted features-list">
+                        <li><strong class="fs-3 d-block text-dark">User Friendly Shopping</strong>Users can effortlessly
+                            browse, search, sort and
+                            purchase products in a visually appealing and intuative design</li>
+                        <li><strong class="fs-3 d-block text-dark">Responsive Web Design</strong>The website is fully
+                            responsive, ensuring an optimal
+                            experience across desktop, tablet and mobile devices.</li>
+                        <li><strong class="fs-3 d-block text-dark">User Authentication</strong>Secure user
+                            authentication using Django AllAuth allows
+                            customers to create accounts, log in, and access personalised features. Such as, viewing
+                            past orders, saving profile information and submitting testimonials.</li>
+                        <li><strong class="fs-3 d-block text-dark">E-Commerce Essentials</strong>The project includes a
+                            shopping bag, product
+                            categories, sorting options, and user-friendly product pages. Along with email confirmation
+                            and toasts to display changes made by the user.</li>
+                        <li><strong class="fs-3 d-block text-dark">Payment Integration</strong> Integration with the
+                            Stripe payment system ensures secure and
+                            convenient online transactions.</li>
+                        <li><strong class="fs-3 d-block text-dark">Comprehensive Admin Panel</strong> An efficient admin
+                            panel allows the site admin
+                            to manage products, orders and testimonials with ease. Using both the built in Django admin
+                            panel and custom admin accessible via the websites frontend. Such as, adding and editing
+                            products, adding events and viewing hidden products.</li>
+                        <li><strong class="fs-3 d-block text-dark">Thorough Testing</strong>Rigorous testing and
+                            debugging ensures a smooth user
                             experience with user updates if an error should occur.</li>
                     </ul>
                 </div>
@@ -168,17 +275,17 @@
     <section class="content-section bg-primary text-white">
         <div class="container px-4 px-lg-5 text-center">
             <h2 class="mb-4">Interested in working with me?</h2>
-            <a class="btn btn-xl btn-light me-4" href="#!">Contact Me!<i class="fa-solid fa-phone-flip ms-2"></i></a>
-            <a class="btn btn-xl btn-dark" href="#!">Download CV<i class="fa-solid fa-download ms-2"></i></a>
+            <a class="btn btn-xl btn-light me-1" href="#!">Contact Me!<i class="fa-regular fa-envelope ms-2"></i></a>
+            <a class="btn btn-xl btn-dark ms-1" href="#!">Download CV<i class="fa-solid fa-download ms-2"></i></a>
         </div>
     </section>
     <!-- Map-->
-    <div class="map" id="contact">
+    <!-- <div class="map" id="contact">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24859.01493683863!2d-2.5956193211923255!3d51.45451366863349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487190a00f01a3a1%3A0x8e1b15961683aa26!2sBristol%2C%20UK!5e0!3m2!1sen!2sus!4v1560877203805!5m2!1sen!2sus"></iframe>
         <br />
         <small><a href="https://www.google.com/maps/place/Bristol,+UK"></a></small>
-    </div>
+    </div> -->
 
     <!-- Footer-->
     <footer class="footer text-center">
@@ -194,17 +301,6 @@
                     <a class="social-link rounded-circle text-white" href="https://www.linkedin.com/in/stephenbeese/"
                         target="_blank">
                         <i class="fa-brands fa-linkedin-in"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3" href="#!" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/stephen.beese/"
-                        target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
                 </li>
             </ul>
             <p class="text-muted small mb-0">Copyright &copy; Stephen Beese 2023</p>
