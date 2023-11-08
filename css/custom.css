@@ -48,7 +48,7 @@
 
 /* Fizzybeese */
 
-.masthead-fizzy {
+/* .masthead-fizzy {
     min-height: 30rem;
     position: relative;
     display: table;
@@ -60,7 +60,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 
 /* Contact Form Page */
@@ -116,6 +116,20 @@
 
 /* FizzyBeese Page */
 
+.masthead-fizzy {
+    min-height: 30rem;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 80vh;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/fizzybeese-responsive.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .features-list li {
     font-size: 1.1em;
     margin-bottom: 5px;
@@ -130,4 +144,23 @@
 
 .shadow-hover:hover {
     box-shadow: 0 0 10px 0 rgba(0,0,0,1);
+}
+
+/* The 147 Club Page */
+.masthead-snooker {
+    min-height: 30rem;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 80vh;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/snooker-responsive.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.link-hover:hover {
+    font-weight: bold;
 }

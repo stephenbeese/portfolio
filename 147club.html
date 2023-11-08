@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Stephen Beese | FizzyBeese</title>
+    <title>Stephen Beese | The 147 Club</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -29,7 +29,7 @@
     </a>
 
     <!-- Header-->
-    <header class="masthead-fizzy d-flex align-items-center">
+    <header class="masthead-snooker d-flex align-items-center">
         <div class="container px-4 px-lg-5 text-center heading-container">
         </div>
     </header>
@@ -43,29 +43,20 @@
                     <div class="row justify-content-center">
                         <div class="col-9">
                             <p class="lead mb-5">
-                                FizzyBeese is a small independently run business that sells bath bombs, wax melts, and
-                                other various accessories directly to their customers. Users can browse products by
-                                category, price, fragrance and more. Users are also able to add products to their cart
-                                and
-                                checkout securely. Users also have a dedicated profile where they can store their
-                                delivery information ready for their next order. In terms of admin capabilities, the
-                                admin can create, update, and delete products as well as hide them from the user and
-                                update sale or clearance prices. The site also features a stock control system that is
-                                easily updated by the admin.
+                                The 147 Club is a booking site for a fictional snooker club. Users are able to reserve a
+                                table for their selected date and time. Users can also view the tables on offer and also
+                                view their past and future bookings.
                             </p>
-                            <p class="lead mb-2 fw-bold">I plan on releasing this website to be used in production at
-                                the start of 2024.</p>
-                            <a href="https://fizzybeese-52707759b9ba.herokuapp.com/" target="_blank"
+                            <a href="https://snooker-hall-booking-system.herokuapp.com/" target="_blank"
                                 class="btn btn-dark">Live Link</a>
-                            <a href="https://github.com/stephenbeese/FizzyBeese" target="_blank" class="btn btn-dark"><i
-                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/stephenbeese/Snooker-Hall-Booking-System" target="_blank"
+                                class="btn btn-dark"><i class="fa-brands fa-github"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Services-->
     <section class="content-section bg-primary text-white text-center" id="services">
         <div class="container-fluid">
@@ -112,14 +103,8 @@
                         </li>
                         <li class="list-inline-item">
                             <span class="service-icon rounded-circle mx-auto mb-3 shadow-hover">
-                                <img class="logo-image" src="assets/img/logo/stripe-logo.webp" alt="Stripe"
-                                    title="Stripe">
-                            </span>
-                        </li>
-                        <li class="list-inline-item">
-                            <span class="service-icon rounded-circle mx-auto mb-3 shadow-hover">
-                                <img class="logo-image" src="assets/img/logo/aws-logo.webp" alt="Amazon Web Services"
-                                    title="Amazon Web Services">
+                                <img class="logo-image" src="assets/img/logo/cloudinary-logo.png" alt="Cloudinary"
+                                    title="Cloudinary">
                             </span>
                         </li>
                         <li class="list-inline-item">
@@ -144,43 +129,61 @@
     <section class="content-section" id="portfolio">
         <div class="container-fluid">
             <div class="content-section-heading text-center">
-                <h3 class="text-secondary mb-0">FizzyBeese</h3>
+                <h3 class="text-secondary mb-0">The 147 Club</h3>
                 <h2 class="mb-5 text-primary">Features</h2>
             </div>
             <div class="row gx-0 justify-content-center">
                 <div class="col-10 col-lg-8">
                     <ul class="text-muted features-list">
-                        <li><strong class="fs-3 d-block text-dark">User Friendly Shopping</strong>Users can effortlessly
-                            browse, search, sort and
-                            purchase products in a visually appealing and intuative design</li>
-                        <li><strong class="fs-3 d-block text-dark">Responsive Web Design</strong>The website is fully
-                            responsive, ensuring an optimal
-                            experience across desktop, tablet and mobile devices.</li>
-                        <li><strong class="fs-3 d-block text-dark">User Authentication</strong>Secure user
-                            authentication using Django AllAuth allows
-                            customers to create accounts, log in, and access personalised features. Such as, viewing
-                            past orders, saving profile information and submitting testimonials.</li>
-                        <li><strong class="fs-3 d-block text-dark">E-Commerce Essentials</strong>The project includes a
-                            shopping bag, product
-                            categories, sorting options, and user-friendly product pages. Along with email confirmation
-                            and toasts to display changes made by the user.</li>
-                        <li><strong class="fs-3 d-block text-dark">Payment Integration</strong> Integration with the
-                            Stripe payment system ensures secure and
-                            convenient online transactions.</li>
-                        <li><strong class="fs-3 d-block text-dark">Comprehensive Admin Panel</strong> An efficient admin
-                            panel allows the site admin
-                            to manage products, orders and testimonials with ease. Using both the built in Django admin
-                            panel and custom admin accessible via the websites frontend. Such as, adding and editing
-                            products, adding events and viewing hidden products.</li>
-                        <li><strong class="fs-3 d-block text-dark">Thorough Testing</strong>Rigorous testing and
-                            debugging ensures a smooth user
-                            experience with user updates if an error should occur.</li>
+                        <li>
+                            <strong class="fs-3 d-block text-dark">User Friendly</strong>
+                            Users can effortlessly browse tables and book them accordingly. The site is simple and
+                            intuative to the user allowing for easy navigation across all pages.
+                        </li>
+                        <li>
+                            <strong class="fs-3 d-block text-dark">Responsive Web Design</strong>
+                            The website is fully responsive, ensuring an optimal experience across desktop, tablet and
+                            mobile devices.
+                        </li>
+                        <li>
+                            <strong class="fs-3 d-block text-dark">User Authentication</strong>
+                            Secure user authentication using Django AllAuth allows customers to create accounts, log in,
+                            and access personalised features. Such as, viewing past and future bookings as well as
+                            submitting testimonials which are otherwise restricted to non-authenticated users.
+                        </li>
+                        <li>
+                            <strong class="fs-3 d-block text-dark">Booking System</strong>
+                            Users can view and book tables for a particular date and time. User are unable to book a
+                            table if any of the following conditions are met, if the table is already booked, if the
+                            user already has a table booked at this time, if the table is undergoing maintenance, if the
+                            end time is before the start time or vice versa. if any of these conditions are met then a
+                            relevant message will be displayed to the user.
+                        </li>
+                        <li>
+                            <strong class="fs-3 d-block text-dark">Testimonials</strong>
+                            Authenticated users are able to leave a testimonial about their experiences at the club. For
+                            them to be displayed on the home page an admin will have to approve it in the admin panel.
+                            This ensures that there is no bad language, etc displayed on the business' website.
+                        </li>
+                        <li>
+                            <strong class="fs-3 d-block text-dark">Built in Admin Panel</strong>
+                            This site uses the built in Django admin panel so the admin can manage bookings and
+                            testimonials.
+                        </li>
+                        <li>
+                            <strong class="fs-3 d-block text-dark">Thorough Testing</strong>
+                            Rigorous testing and debugging ensures a smooth user experience with user updates if an
+                            error should occur when booking. This site has been tested with both automated and manual
+                            tests. Details of these can be found in the project's
+                            <a class="text-muted link-hover"
+                                href="https://github.com/stephenbeese/Snooker-Hall-Booking-System/blob/main/TESTING.md"
+                                target="_blank">GitHub repository</a>.
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Call to Action-->
     <section class="content-section bg-primary text-white">
         <div class="container px-4 px-lg-5 text-center">
@@ -211,7 +214,6 @@
             <p class="text-muted small mb-0">Copyright &copy; Stephen Beese 2023</p>
         </div>
     </footer>
-
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
     <!-- Bootstrap core JS-->
