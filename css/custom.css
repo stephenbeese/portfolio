@@ -8,6 +8,16 @@
     transition: opacity 0.3s ease;
 }
 
+.ci-logo {
+    width: 20px;
+    margin-right: 5px;
+
+}
+
+.home-logo {
+    width: 40px;
+    margin: 2px;
+}
 
 .snooker-club:hover .caption {
     /* background-color: rgba(80, 185, 249, 0.63); */
