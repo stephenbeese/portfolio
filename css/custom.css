@@ -19,6 +19,15 @@
     margin: 2px;
 }
 
+.projects-sidebar-button {
+    height: 54px;
+    border-radius: 0;
+}
+
+.projects-sidebar-button:hover {
+    background-color: #4a9ab2;
+}
+
 .snooker-club:hover .caption {
     /* background-color: rgba(80, 185, 249, 0.63); */
     background-color: rgba(75, 75, 75, 0.63);
