@@ -29,17 +29,14 @@
 }
 
 .snooker-club:hover .caption {
-    /* background-color: rgba(80, 185, 249, 0.63); */
     background-color: rgba(75, 75, 75, 0.63);
 }
 
 .fizzybeese:hover .caption {
-    /* background-color:rgba(244, 162, 205, 0.86); */
     background-color: rgba(75, 75, 75, 0.63);
 }
 
 .memory-game:hover .caption {
-    /* background-color: rgba(178, 189, 78, 0.63); */
     background-color: rgba(75, 75, 75, 0.63);
 }
 
@@ -62,25 +59,6 @@
 .technologies-item:hover {
     text-decoration: underline;
 }
-
-
-
-/* Fizzybeese */
-
-/* .masthead-fizzy {
-    min-height: 30rem;
-    position: relative;
-    display: table;
-    width: 100%;
-    height: 80vh;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/responsive.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
 
 /* Contact Form Page */
 
