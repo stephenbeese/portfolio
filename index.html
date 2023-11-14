@@ -20,6 +20,10 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/custom.css" rel="stylesheet" />
+    <!-- GITHUB API / jQuery -->
+    <link rel="stylesheet" href="css/github-styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/github-information.js"></script>
 </head>
 
 <body id="page-top">
@@ -329,7 +333,7 @@
         </div>
     </section>
     <!-- Portfolio-->
-    <section class="content-section" id="portfolio">
+    <section class="content-section mb-0" id="portfolio">
         <div class="container px-4 px-lg-5">
             <div class="content-section-heading text-center">
                 <h3 class="text-secondary mb-0">Portfolio</h3>
@@ -402,7 +406,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <div class="h2">Animal Memory Game</div>
-                                <p class="mb-0">A memory game for children</p>
+                                <p class="mb-0">A randomly assorted memory game for children</p>
                                 <div class="justify-content-center mt-2">
                                     <a href="https://stephenbeese.github.io/Animal-Memory-Game/" target="_blank"
                                         class="btn btn-dark btn-sm">Live Link</a>
@@ -450,7 +454,79 @@
                 </div>
             </div>
         </div>
+        <!-- GITHUB API -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 my-3">
+                    <p class="text-center">
+                        <a class="btn btn-primary mx-auto" data-bs-toggle="collapse" href="#collapseExample"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Other Projects...
+                        </a>
+                    </p>
+                </div>
+                <div class="col-12">
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            <div class="row bg-color-contact hidden" id="github-section">
+                                <div class="col">
+                                    <h3 class="contact-heading uppercase text-center">View My GitHub Projects</h3>
+                                    <h5 class="text-center text-muted">You can also search on other user profiles</h5>
+
+                                    <div class="center-form">
+                                        <input type="text" id="gh-username" value="stephenbeese"
+                                            oninput="fetchGitHubInformation()" />
+                                        <div id="gh-user-data"></div>
+                                        <div id="gh-repo-data"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- GITHUB API
+        <p>
+            <a class="btn btn-primary text-center" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Other Projects...
+            </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <div class="row bg-color-contact hidden" id="github-section">
+                    <div class="col">
+                        <h3 class="contact-heading uppercase text-center">View My GitHub Projects</h3>
+                        <h5 class="text-center text-muted">You can also search on other user profiles</h5>
+
+                        <div class="center-form">
+                            <input type="text" id="gh-username" value="stephenbeese"
+                                oninput="fetchGitHubInformation()" />
+                            <div id="gh-user-data"></div>
+                            <div id="gh-repo-data"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    <!-- <section class="container pt-2">
+        <button class="btn btn-dark mx-auto" id="show-github">Show More Projects...</button>
+        <div class="row bg-color-contact hidden" id="github-section">
+            <div class="col">
+                <h3 class="contact-heading uppercase text-center">View My GitHub Projects</h3>
+                <h5 class="text-center text-muted">You can also search on other user profiles</h5>
+
+                <div class="center-form">
+                    <input type="text" id="gh-username" value="stephenbeese" oninput="fetchGitHubInformation()" />
+                    <div id="gh-user-data"></div>
+                    <div id="gh-repo-data"></div>
+                </div>
+            </div>
+        </div>
+    </section> -->
     <!-- Call to Action-->
     <section class="content-section bg-primary text-white" id="contact">
         <div class="container px-4 px-lg-5 text-center">
@@ -472,6 +548,7 @@
                     class="fa-solid fa-download ms-2"></i></a> -->
         </div>
     </section>
+
     <!-- Map-->
     <div class="map">
         <iframe
