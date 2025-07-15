@@ -46,3 +46,37 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+// Fade-up on scroll using Intersection Observer
+document.addEventListener("DOMContentLoaded", function () {
+    const fadeElements = document.querySelectorAll('.fade-up');
+
+    const observerOptions = {
+        threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+            } else {
+                entry.target.classList.remove('in-view'); // REMOVE CLASS WHEN OUT OF VIEW
+            }
+        });
+    }, observerOptions);
+
+    fadeElements.forEach(el => {
+        observer.observe(el);
+    });
+});
+
+
+// Auto update year for copyright
+
+document.addEventListener("DOMContentLoaded", function () {
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+});
