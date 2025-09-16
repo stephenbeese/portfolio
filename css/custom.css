@@ -26,8 +26,6 @@
     cursor: pointer;
 }
 
-
-/* LOGO TOOL TIPS */
 .home-logo::after {
   content: attr(title);
   position: absolute;
@@ -46,36 +44,51 @@
 }
 
 /* Show tooltip on hover */
-.home-logo:hover::after {
+.home-logo[logo-title]:hover::after {
   opacity: 1;
 }
 
+.btn[data-title] {
+  position: relative;
+}
 
+.btn[data-title]::after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: 120%; /* position tooltip above */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s ease-in; /* shows quickly */
+}
 
-
+.btn[data-title]:hover::after {
+  opacity: 1;
+}
 
 .projects-sidebar-button {
     height: 54px;
     border-radius: 0;
 }
 
+/* Portfolio Section */
 .projects-sidebar-button:hover {
     background-color: #4a9ab2;
 }
 
-.snooker-club:hover .caption {
-    background-color: rgba(75, 75, 75, 0.63);
-}
-
-.fizzybeese:hover .caption {
-    background-color: rgba(75, 75, 75, 0.63);
-}
-
-.booking-form:hover .caption {
-    background-color: rgba(75, 75, 75, 0.63);
-}
-
-.tetris:hover .caption {
+.snooker-club:hover .caption,
+.fizzybeese:hover .caption,
+.booking-form:hover .caption,
+.tetris:hover .caption,
+.snooker-data-analysis:hover .caption,
+.online-retail-data-analysis:hover .caption {
     background-color: rgba(75, 75, 75, 0.63);
 }
 
