@@ -17,7 +17,42 @@
 .home-logo {
     width: 40px;
     margin: 2px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
+
+.home-logo:hover {
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+
+/* LOGO TOOL TIPS */
+.home-logo::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in;
+}
+
+/* Show tooltip on hover */
+.home-logo:hover::after {
+  opacity: 1;
+}
+
+
+
+
 
 .projects-sidebar-button {
     height: 54px;
