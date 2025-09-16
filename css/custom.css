@@ -51,14 +51,12 @@
 }
 
 
-
-
-
 .projects-sidebar-button {
     height: 54px;
     border-radius: 0;
 }
 
+/* Portfolio Section */
 .projects-sidebar-button:hover {
     background-color: #4a9ab2;
 }
@@ -76,6 +74,10 @@
 }
 
 .tetris:hover .caption {
+    background-color: rgba(75, 75, 75, 0.63);
+}
+
+.snooker-data-analysis:hover .caption {
     background-color: rgba(75, 75, 75, 0.63);
 }
 
