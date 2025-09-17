@@ -71,6 +71,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Project dropdown button
+let projects_dropdown = document.getElementById("projects-dropdown")
+
+projects_dropdown.addEventListener("click", function() {
+    // When project dropdown is clicked change inner HTML
+    if (projects_dropdown.innerHTML.includes('fa-caret-up')) {
+        projects_dropdown.innerHTML = 'Other Projects <i class="fa-solid fa-caret-down"></i>'
+        return
+    }
+    projects_dropdown.innerHTML = 'Close Projects <i class="fa-solid fa-caret-up"></i>'
+})
 
 // Auto update year for copyright
 
